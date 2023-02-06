@@ -1,1 +1,51 @@
-[{"title":"Manzana","descripction":"Roja","price":200,"thumbnail":"asdasdasd","code":123,"stock":200,"id":1},{"title":"Peras","descripction":"Roja","price":200,"thumbnail":"asdasdasd","code":123,"stock":200,"id":4},{"title":"cocos","descripction":"Verde","price":800,"thumbnail":"asdaasdasdasd","code":145,"stock":78,"id":5},{"title":"Uva","descripction":"Violeta","price":65,"thumbnail":"asdasdasdzxc","code":36,"stock":89,"id":6},{"title":"toronja","descripction":"cuadrada","price":70,"thumbnail":"asdasdasd","code":98,"stock":200,"id":7},"\"title\":\"Manzana\",\"descripction\":\"Roja\",\"price\":200,\"thumbnail\":\"asdasdasd\",\"code\":123,\"stock\":200",123,123,"\"price\":123","123"]
+[
+    {
+        "title": "Manzana",
+        "descripction": "Roja",
+        "price": 200,
+        "thumbnail": "asdasdasd",
+        "code": 123,
+        "stock": 200,
+        "id": 1
+    },
+    {
+        "title": "Peras",
+        "descripction": "Roja",
+        "price": 200,
+        "thumbnail": "asdasdasd",
+        "code": 123,
+        "stock": 200,
+        "id": 4
+    },
+    {
+        "title": "cocos",
+        "descripction": "Verde",
+        "price": 800,
+        "thumbnail": "asdaasdasdasd",
+        "code": 145,
+        "stock": 78,
+        "id": 5
+    },
+    {
+        "title": "Uva",
+        "descripction": "Violeta",
+        "price": 65,
+        "thumbnail": "asdasdasdzxc",
+        "code": 36,
+        "stock": 89,
+        "id": 6
+    },
+    {
+        "title": "toronja",
+        "descripction": "cuadrada",
+        "price": 70,
+        "thumbnail": "asdasdasd",
+        "code": 98,
+        "stock": 200,
+        "id": 7
+    },
+    "\"title\":\"Manzana\",\"descripction\":\"Roja\",\"price\":200,\"thumbnail\":\"asdasdasd\",\"code\":123,\"stock\":200",
+    123,
+    123,
+    "\"price\":123"
+]

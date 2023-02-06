@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "espress": "^0.0.0",
     "express": "^4.18.2",
     "express-handlebars": "^6.0.7",
     "nodemon": "^2.0.20",

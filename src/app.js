@@ -22,7 +22,7 @@ const userRouterCart = require("./routes/carts.js")
 app.use("/api/carts", userRouterCart)
 
 const realTime = require("./routes/realTimeProducts")
-app.use("/realTimeProducts", realTime)
+app.use("/", realTime)
 
 
 //{Handlebars
@@ -37,12 +37,9 @@ app.set('views', './src/views/partials');
 app.set('view engine', 'hbs');
 
 const viewsRouter = require("./routes/views")
-app.use("/realtimeproducts",viewsRouter)
+app.use("/",viewsRouter)
 
-const publicRouter = require("./routes/views")
-app.use("/",publicRouter)
 //Handlebars}
-
 
 const PORT = 8080
 const Server = httpServer.listen(PORT, ()=> console.log(`Server running on PORT ${PORT}`))
