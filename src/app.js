@@ -45,6 +45,7 @@ const PORT = 8080
 const Server = httpServer.listen(PORT, ()=> console.log(`Server running on PORT ${PORT}`))
 Server.on("error", error => console.log(error))
 
+let objProd = {}
 
 io.on('connection', async socket => {
     let arr = await manager.getProducts();
@@ -53,13 +54,29 @@ io.on('connection', async socket => {
     io.sockets.emit('messages', json)
 
     socket.on('idEliminar', async data => {
-        console.log(data)
         await manager.deleteProduct(data);
     })
     
-    socket.on('addProd', async data => {
+    socket.on('title', title => {
+        objProd.title = title
+    })
 
-        await manager.addProduct(data);
+    socket.on('descripction', descripction => {
+        objProd.descripction = descripction
+    })
+
+    socket.on('price', price => {
+        objProd.price = price
+    })
+
+    socket.on('code', code => {
+        objProd.code = code
+        
+    })
+
+    socket.on('stock', async stock => {
+        objProd.stock = stock
+        await manager.addProduct(objProd);
     })
 })
 
