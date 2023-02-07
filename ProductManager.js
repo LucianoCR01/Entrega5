@@ -16,7 +16,7 @@ class ProducManager{
     }
 
     async addProduct(nuevoProducto){
-        // nuevoProducto.id = await this.getNewId()
+        nuevoProducto.id = await this.getNewId()
         let datos = await this.getProducts()
         datos.push(nuevoProducto)
         await fs.promises.writeFile(this.products, JSON.stringify(datos))
