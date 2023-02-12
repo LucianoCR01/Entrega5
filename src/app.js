@@ -54,7 +54,9 @@ io.on('connection', async socket => {
     io.sockets.emit('messages', json)
 
     socket.on('idEliminar', async data => {
-        await manager.deleteProduct(data);
+        let arr =  await manager.deleteProduct(data);
+        let json = JSON.stringify(arr)
+        io.sockets.emit("messages",json)
     })
     
     socket.on('title', title => {
@@ -76,7 +78,9 @@ io.on('connection', async socket => {
 
     socket.on('stock', async stock => {
         objProd.stock = stock
-        await manager.addProduct(objProd);
+        let arr =  await manager.addProduct(objProd);
+        let json = JSON.stringify(arr)
+        io.sockets.emit("messages",json)
     })
 })
 
